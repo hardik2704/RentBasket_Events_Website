@@ -1,0 +1,47 @@
+.use-case-section {
+  background-color: var(--color-bg-primary);
+}
+
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.use-case-card {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.use-case-card:hover {
+  border-color: rgba(210, 38, 48, 0.3);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+
+.use-case-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-bg-dark);
+  margin-right: var(--spacing-sm);
+  transition: var(--transition-smooth);
+}
+
+.use-case-card:hover .use-case-icon {
+  color: var(--color-accent-red);
+}
+
+.use-case-name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--color-bg-dark);
+}
